@@ -1,0 +1,12 @@
+[build]
+  command = "pnpm run build"
+  publish = ".next"
+
+[build.environment]
+  NODE_VERSION = "18"
+  NEXT_PUBLIC_BASE_URL = "/"
+
+[[redirects]]
+  from = "/api/*"
+  to = "/api/:splat"
+  status = 200
