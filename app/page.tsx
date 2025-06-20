@@ -85,17 +85,6 @@ export default function Portfolio() {
                   View Projects
                 </Button>
               </div>
-
-              <div className="flex flex-wrap gap-6 text-sm text-slate-400">
-                <div className="flex items-center gap-2">
-                  <Mail className="h-4 w-4" />
-                  alihaiderrana846@gmail.com
-                </div>
-                <div className="flex items-center gap-2">
-                  <Phone className="h-4 w-4" />
-                  0317-0727716
-                </div>
-              </div>
             </div>
 
             <div className="flex justify-center lg:justify-end">

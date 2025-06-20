@@ -81,7 +81,7 @@ export default function TypingAnimation({
   return (
     <span className={className}>
       {displayed}
-      <span style={{ opacity: showCursor ? 1 : 0 }}>|</span>
+      <span style={{ color: "#059669" , opacity: showCursor ? 1 : 0 }}>|</span>
     </span>
   );
 }
