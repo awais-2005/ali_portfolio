@@ -5,6 +5,7 @@ import { Button } from "@/components/ui/button"
 import { Card, CardContent, CardDescription, CardHeader, CardTitle } from "@/components/ui/card"
 import { Mail, Phone, ExternalLink, Code, Database, Globe, Blocks } from "lucide-react"
 import Image from "next/image"
+import TypingAnimation from "@/components/ui/TypingAnimation"
 
 export default function Portfolio() {
   const skills = {
@@ -12,6 +13,7 @@ export default function Portfolio() {
     "Web Development": ["Frontend Development", "HTML5", "CSS3", "JavaScript ES6+"],
     Database: ["MySQL", "File-based Systems"],
     "Tools & IDEs": ["Visual Studio", "VS Code", "Eclipse", "Git"],
+    "AI & Automation": ["Prompt Engineering", "ChatGPT", "Copilot", "Professional AI Usage"],
     "Areas of Interest": ["Blockchain Development", "Smart Contracts", "DApps", "UI/UX Design"],
   }
 
@@ -53,7 +55,7 @@ export default function Portfolio() {
             <div className="space-y-8">
               <div className="space-y-4">
                 <h1 className="text-4xl lg:text-6xl font-bold bg-gradient-to-r from-white to-slate-300 bg-clip-text text-transparent">
-                  Ali Haider
+                  <TypingAnimation text="Ali Haider" speed={120} />
                 </h1>
                 <p className="text-xl lg:text-2xl text-slate-300 font-medium">
                   Software Engineering Student & Aspiring Developer
@@ -100,7 +102,7 @@ export default function Portfolio() {
               <div className="relative">
                 <div className="absolute inset-0 bg-gradient-to-r from-emerald-400 to-cyan-400 rounded-full blur-2xl opacity-20 scale-110"></div>
                 <Image
-                  src="/images/ali-profile.jpg"
+                  src="/images/ali-profile.png"
                   alt="Ali Haider"
                   width={300}
                   height={300}
@@ -144,7 +146,7 @@ export default function Portfolio() {
                     {category === "Web Development" && <Globe className="h-5 w-5 text-cyan-400" />}
                     {category === "Database" && <Database className="h-5 w-5 text-purple-400" />}
                     {category === "Tools & IDEs" && <ExternalLink className="h-5 w-5 text-orange-400" />}
-                    {category === "Areas of Interest" && <Blocks className="h-5 w-5 text-pink-400" />}
+                    {category === "AI & Automation" && <Blocks className="h-5 w-5 text-pink-400" />}
                     {category}
                   </CardTitle>
                 </CardHeader>
@@ -248,6 +250,10 @@ export default function Portfolio() {
                   <div className="p-4 bg-gradient-to-r from-cyan-50 to-purple-50 rounded-lg border border-cyan-100">
                     <h3 className="font-semibold text-slate-800 mb-2">Frontend Web Development</h3>
                     <p className="text-slate-600 text-sm">React, JavaScript, UI/UX Design, Modern Web Technologies</p>
+                  </div>
+                  <div className="p-4 bg-gradient-to-r from-yellow-50 to-green-50 rounded-lg border border-yellow-100">
+                    <h3 className="font-semibold text-slate-800 mb-2">AI & Automation</h3>
+                    <p className="text-slate-600 text-sm">Applying AI tools professionally, prompt engineering, and automation in real-world projects</p>
                   </div>
                 </div>
               </CardContent>
